@@ -398,7 +398,8 @@ section{
     box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);   
 }
 .skill-card .fa{
-  color: var(--icon-fill);  
+  color: var(--icon-fill); 
+  padding-right: 20px; 
 }
 .skill-card:hover{
     transform: scale(1.1) !important; 
