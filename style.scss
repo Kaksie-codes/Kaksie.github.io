@@ -169,7 +169,7 @@ h1 span{
     align-items: center;
 }
 .btn {
-    min-width: 10rem;
+    min-width: 10em;
     border-radius: 100px;
     text-align: center;
     z-index: 10000000000000;
@@ -186,7 +186,7 @@ h1 span{
 .btn-secondary {
     background: var(--action-secondary);
     color: var(--foreground-secondary);
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     border: 3px solid var(--foreground-tertiary);
 }  
 .btn-secondary:hover {
