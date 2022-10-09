@@ -240,7 +240,7 @@ header .btn-group {
 .mobile-nav {
     position: fixed;
     inset: 0;
-    background: var(--background-primary);
+    background: var(--accent);
     padding: 70px 20px;
     overflow: auto;
     overscroll-behavior: contain;
@@ -248,29 +248,41 @@ header .btn-group {
     visibility: hidden;
     transition: 0.5s cubic-bezier(1, 0, 0.30, 0.70);
     z-index: 10;
-    height: 40vh;
+    height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: space-between;
 }
 .mobile-nav.active {
-    transform: translateX(0);
+    transform: translateX(50%);
     visibility: visible;
 }
 .nav-close-btn {
     position: absolute;
-    top:   20px;
-    right: 20px;
+    top:   30px;
+    right: 53%;
 }
-.mobile-nav .wrapper {
-    padding-bottom: 1.25rem;
-    margin-bottom:  1.25rem;
-    border-bottom: 1px solid var(--action-primary);
+// .mobile-nav .wrapper {
+//     padding-bottom: 1.25rem;
+//     margin-bottom:  1.25rem;
+//     // border-bottom: 1px solid var(--action-primary);
+    
+// }
+.mobile-nav .wrapper ul{
+  display: flex;
+  flex-direction: column;
+
 }
 .mobile-nav .nav-title { margin-bottom: 1rem; }
 
-.mobile-nav .nav-item { margin-bottom: 0.5rem; }
+.mobile-nav .nav-item { 
+  margin-bottom: 3rem;   
+}
 
 .mobile-nav .nav-link {
-  font-size: var(--fs-3);
-  color: var(--foreground-secondary);
+  font-size: var(--fs-3);  
+  color: #ffff;
 }
 .mobile-nav .nav-link:hover { color: var(--accent); }
 

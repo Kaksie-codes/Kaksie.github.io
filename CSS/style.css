@@ -271,7 +271,7 @@ header .btn-group {
 .mobile-nav {
   position: fixed;
   inset: 0;
-  background: var(--background-primary);
+  background: var(--accent);
   padding: 70px 20px;
   overflow: auto;
   -ms-scroll-chaining: none;
@@ -280,24 +280,23 @@ header .btn-group {
   visibility: hidden;
   transition: 0.5s cubic-bezier(1, 0, 0.3, 0.7);
   z-index: 10;
-  height: 40vh;
+  height: 100vh;
 }
 
 .mobile-nav.active {
-  transform: translateX(0);
+  transform: translateX(50%);
   visibility: visible;
 }
 
 .nav-close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 53%;
 }
 
-.mobile-nav .wrapper {
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.25rem;
-  border-bottom: 1px solid var(--action-primary);
+.mobile-nav .wrapper ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav .nav-title {
@@ -305,12 +304,12 @@ header .btn-group {
 }
 
 .mobile-nav .nav-item {
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .mobile-nav .nav-link {
   font-size: var(--fs-3);
-  color: var(--foreground-secondary);
+  color: white;
 }
 
 .mobile-nav .nav-link:hover {
