@@ -273,13 +273,10 @@ header .btn-group {
   inset: 0;
   background: var(--accent);
   padding: 70px 20px;
-  overflow: auto;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
   transform: translateX(100%);
   visibility: hidden;
   transition: 0.5s cubic-bezier(1, 0, 0.3, 0.7);
-  z-index: 10;
+  z-index: 9999999999999999000000000;
   height: 100vh;
 }
 
@@ -299,10 +296,6 @@ header .btn-group {
   flex-direction: column;
 }
 
-.mobile-nav .nav-title {
-  margin-bottom: 1rem;
-}
-
 .mobile-nav .nav-item {
   margin-bottom: 3rem;
 }
@@ -314,6 +307,10 @@ header .btn-group {
 
 .mobile-nav .nav-link:hover {
   color: var(--accent);
+}
+
+.fixed-position {
+  position: fixed;
 }
 
 /*******Hero Section********/

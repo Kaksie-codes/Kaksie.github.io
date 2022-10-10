@@ -404,14 +404,15 @@
                         </div>   
                     </div>
         
-                    <form id="contact-form" action="https://formsubmit.co/nsikakakpan007@gmail.com" method="POST"> 
+                    <form id="contact-form" method="POST" data-netlify="true"> 
                         
                         <input class="input-field field" type="text" name="name" placeholder="Your Name" required>
                         <input type="hidden" name="_subject" value="Portfolio Website Enquiry!">   
                         <input class="input-field field" type="text" name="email" placeholder="Your Email" required>
         
                         <textarea class="input-field field" name="message" placeholder="Your Message" required></textarea>
-        
+                        
+                        <div data-netlify-recaptcha = "true"></div>
                         <input id="submit-btn" type="submit" value="Send" class="field">
                     </form>
                 </div>

@@ -9,6 +9,7 @@ const navCloseBtn = document.querySelector('.nav-close-btn');
 // navToggle function
 const navToggleFunc = function () { 
   nav.classList.toggle('active');
+  document.body.classList.toggle('fixed-position')
 }
 
 navMenuBtn.addEventListener('click', navToggleFunc);
